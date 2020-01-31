@@ -13,6 +13,7 @@ body,
 }
 h2 {
   text-align: center;
+  margin: 10px 0;
 }
 .textAreaLength {
   width: 90%;
@@ -147,7 +148,10 @@ button[disabled] {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
+
   margin: 0 auto;
+
 }
 .col {
   width: 40%;
@@ -185,6 +189,17 @@ button[disabled] {
 
   #password {
     font-size: 1rem;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col {
+  
+    width: 90%;
+  }
+  .card-footer {
+    width: 50%;
+    margin-bottom: 15px ;
   }
 }
 
