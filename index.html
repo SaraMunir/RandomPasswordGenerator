@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://use.fontawesome.com/4b53ea2f0f.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <header>
+        <h1>Password Generator</h1>
+      </header> -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <div class="textAreaLength">
+            <textarea
+              readonly
+              id="display" placeholder="Your Secure Password"
+              aria-label="Generated Password"></textarea>
+              <button id="copyBtn" onclick="copyPassword()"><i class="fa fa-files-o fa-2x" aria-hidden="true"></i>
+              </button>
+          </div>
+          <form action="#" method="#" class="myForm" name="myForm" id="myForm" >
+            <div class="row">
+              <div class="col">
+                <label for="uppercase">Uppercase</label>
+                <input type="checkbox" id="uppercase" name="specialCharacter" value="uppercase">
+              </div>
+              <div class="col">
+                <label for="lowercase">Lowercase</label>
+                <input type="checkbox" id="lowercase" name="specialCharacter" value="lowercase" >
+              </div>
+            <!-- </div>
+            <div class="row"> -->
+              <div class="col">
+                <label for="numeric">Numeric</label>
+                <input type="checkbox" id="numeric" name="specialCharacter" value="numeric">
+              </div>
+              <div class="col">
+                <label for="specialChar">Special Character</label>
+                <input type="checkbox"  id="specialChar" name="special" value="specialChar">
+              </div>
+              <div class="col-full">
+                <input type="range" min="8" max="128" name="slider" id="slider">
+                <div id="length"></div>
+              </div>
+            </div>
+        </form>
+        <br />
+        
+                </div>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn" onclick="generate()">Generate Password</button>
+          <input type="button" class="btn" onclick="myFunction()" value="Reset">
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
